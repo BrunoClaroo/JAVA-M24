@@ -15,5 +15,11 @@ public class Spider extends Actor
     public void act()
     {
         // Add your action code here.
+        move(1);
+        // verifica se o numero aleatorio de 1 a 100 está menor ou igual a 20 
+        if (Greenfoot.getRandomNumber(100)+1 <= 20){
+            //gira aleatoriamente de -45 a 45º para rotacionar
+          turn(Greenfoot.getRandomNumber(91)-45);
+        }
     }
 }
