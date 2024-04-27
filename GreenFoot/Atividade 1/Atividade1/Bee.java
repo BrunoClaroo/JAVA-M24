@@ -25,4 +25,15 @@ public class Bee extends Actor
             turn(5);
         }
     }
+    /**
+     * Método que verifica se está na direita do mundo 
+     */
+    public boolean isNaDireita(){
+        if(getX() > getWorld(). getWidth()-10) {
+            return true;
+        }
+        return false;
+    }
+    
+    
 }

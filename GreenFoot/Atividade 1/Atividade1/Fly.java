@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Bruno Claro 
  * @version 20/04/24
  */
-public class Fly extends Actor
+public class Fly extends Inseto
 {
     /**
      * método act é executado sempre que apertamos o botao act ou
@@ -16,9 +16,6 @@ public class Fly extends Actor
     {
         // Add your action code here.
         move(1);
-        if (isAtEdge()){
-            turn(180);
-        }
-        
+        verificarCanto();
     }
 }

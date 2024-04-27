@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Spider here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Bruno Claro 
+ * @version 27/04/24
  */
-public class Spider extends Actor
+public class Spider extends Inseto
 {
     /**
      * Act - do whatever the Spider wants to do. This method is called whenever
@@ -21,5 +21,6 @@ public class Spider extends Actor
             //gira aleatoriamente de -45 a 45º para rotacionar
           turn(Greenfoot.getRandomNumber(91)-45);
         }
+        verificarCanto();
     }
 }
