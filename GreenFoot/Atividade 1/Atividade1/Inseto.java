@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Classe que representa o Inseto que será utilizado no jogo.
  * 
- * @author Richard Brosler 
+ * @author Bruno Claro 
  * @version 2024-04-27
  */
 public class Inseto extends Actor

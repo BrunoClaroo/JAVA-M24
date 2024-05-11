@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Classe Abelha para ser utilizada no jogo BeeWorld.
  * 
- * @author Richard Brosler 
+ * @author Bruno Claro 
  * @version 2024-04-20
  */
 public class Abelha extends Actor
@@ -53,7 +53,7 @@ public class Abelha extends Actor
         //Mostrando as vidas
         mostrarVidas();
         //Mostrando o score
-        mostrarScore();
+        //mostrarScore();
     }
     /**
      * Método que verifica se está na direita do mundo
@@ -114,7 +114,9 @@ public class Abelha extends Actor
             //Tocar o Slarp
             Greenfoot.playSound("slarp.wav");
             //Aumentar o score
-            score += PONTOS; //score = score + PONTOS;
+            //score += PONTOS; //score = score + PONTOS;
+            //Colocando o score do mundo 
+            ((BeeWorld) getWorld()).addScore(PONTOS);
             //Adicionando uma nova mosca no mundo
             int pX = Greenfoot.getRandomNumber(getWorld().getWidth());
             int pY = Greenfoot.getRandomNumber(getWorld().getHeight());

@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Classe Mosca destinada a fazer parte do jogo BeeWorld.
  * 
- * @author Richard Brosler 
+ * @author Bruno Claro 
  * @version 2024-04-20
  */
 public class Mosca extends Inseto
