@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Classe que representa inseto que será utilizado no jogo.
+ * Classe que representa o Inseto que será utilizado no jogo.
  * 
- * @author Bruno Claro
- * @version 27/04/24
+ * @author Richard Brosler 
+ * @version 2024-04-27
  */
 public class Inseto extends Actor
 {
@@ -17,10 +17,10 @@ public class Inseto extends Actor
         // Add your action code here.
     }
     /**
-     * Método que irá verificar se o objeto está no canto do mundo 
+     * Método que irá verificar se o objeto está no canto do mundo
      */
     public void verificarCanto(){
-        if(isAtEdge()){
+        if (isAtEdge()){
             turn(180);
         }
     }
