@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Classe que representa a Bala do jogo
  * 
- * @author ELiezer
+ * @author Bruno Claro
  * @version 2024-04-27
  */
 public class Bala extends Actor
@@ -20,7 +20,8 @@ public class Bala extends Actor
         removerAlien();
         // se atingiu o topo, removemos a bala do mundo
         if (isAtEdge()){
-            getWorld().removeObject(this);
+            //getWorld().removeObject(this);
+            ((SpaceInvadersWorld) getWorld()).removerBala();
         }
    
     }

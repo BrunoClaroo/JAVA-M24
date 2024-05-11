@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Alien here.
  * 
- * @author Eliezer
+ * @author Bruno Claro
  * @version 2024-04-27
  */
 public class Alien extends Actor
@@ -19,6 +19,12 @@ public class Alien extends Actor
         move(pX);
         if (isAtEdge()){
             pX *= -1; // pX = pX * -1;
+            setLocation(getX(), getY()+30);
+
+        }
+        if (isTouching(Nave.class)){
+            getWorld().showText("GAME OVER", 400, 300);
+            Greenfoot.stop();
         }
     }
 }
