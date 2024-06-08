@@ -17,7 +17,7 @@ public class Exemplo04 {
 		// colocando como delimitador o ; 
 		//usando laço de impressão do cabeçalho
 		
-		while (scA.hasNext())s {
+		while (scA.hasNext()) {
 			System.out.print(scA.next() + "\t\t");
 				}		
 			System.out.println();
