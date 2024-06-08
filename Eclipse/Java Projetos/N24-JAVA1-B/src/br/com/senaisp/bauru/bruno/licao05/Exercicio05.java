@@ -20,6 +20,7 @@ public class Exercicio05 {
 			fo.mostrarForca();
 		}
 		sc.close();
+		System.out.println("A Palavra Secreta era "+fo.mostrarPalavra());
 
 	}
 

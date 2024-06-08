@@ -81,4 +81,8 @@ public class Forca {
 		public boolean isTerminado() {
 			return erros >=6 || visualizacao.indexOf('-') == -1;
 		}
+		public String mostrarPalavra () {
+			return palavraSecreta;
+			
+		}
 }
