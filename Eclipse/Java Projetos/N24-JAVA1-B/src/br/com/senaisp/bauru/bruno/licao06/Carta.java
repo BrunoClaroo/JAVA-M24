@@ -29,7 +29,7 @@ public class Carta {
 			 txt = txt.replaceFirst("##", numero);
 			 			  
 			return txt ;
-		 }
+		 }	
 		
 	 
 }
