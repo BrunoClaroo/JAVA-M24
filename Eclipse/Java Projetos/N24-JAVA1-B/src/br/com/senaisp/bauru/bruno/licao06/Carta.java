@@ -12,9 +12,9 @@ public class Carta {
 		 }
 		 if(vl<1 || vl>13) {
 			 System.out.println("Numero da carta Inválido!");
-			 naipe = NAIPES[np-1];
-			 numero = NUMEROS[vl-1];
 		 }
+		 naipe = NAIPES[np-1];
+		 numero = NUMEROS[vl-1];
 	 }
 		 @Override
 		 public String toString() {
@@ -24,9 +24,9 @@ public class Carta {
 			 			  "│  §  │\n"+
 			 			  "│   ##│\n"+
 			 			  "└─────┘\n";
-			 txt = txt.replaceFirst("##", numero);
+			 txt = txt.replaceFirst("##", numero + (numero.equals("10") ? "": " "));
 			 txt = txt.replaceFirst("§", naipe);
-			 txt = txt.replaceFirst("##", numero);
+			 txt = txt.replaceFirst("##", (numero.equals("10") ? "": " ")+ numero);
 			 			  
 			return txt ;
 		 }	
