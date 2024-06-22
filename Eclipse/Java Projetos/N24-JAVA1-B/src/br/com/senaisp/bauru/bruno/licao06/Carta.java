@@ -6,12 +6,12 @@ public class Carta {
 	 private String naipe;
 	 private String numero;
 	 //constructor 
-	 public Carta(int np,int vl) {
+	 public Carta(int np,int vl) throws Exception {
 		 if(np<1 || np>4) {
-			 System.out.println("Naipe inválido!");
+			 throw new Exception("Naipe inválido!");
 		 }
 		 if(vl<1 || vl>13) {
-			 System.out.println("Numero da carta Inválido!");
+			 throw new Exception("Numero da carta Inválido!");
 		 }
 		 naipe = NAIPES[np-1];
 		 numero = NUMEROS[vl-1];
