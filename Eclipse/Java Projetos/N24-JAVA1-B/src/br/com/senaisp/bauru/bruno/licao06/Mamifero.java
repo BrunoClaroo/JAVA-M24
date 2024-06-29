@@ -34,6 +34,7 @@ public abstract class Mamifero {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Nome: "+ nome + "\n"+ "Cor: "+ cor +"\n"+"Idade: "+ idade+ "\n";
+		
 	}
 
 }
